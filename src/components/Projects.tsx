@@ -39,8 +39,8 @@ const Projects = () => {
       image: "https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg",
       description: "A responsive portfolio website showcasing projects, skills, and professional experience.",
       technologies: ["React", "Framer Motion", "Tailwind CSS", "Vite"],
-      link: "#",
-      github: "#"
+      link: "https://shakthichaithanya.github.io/Professional-Protfolio/",
+      github: "https://github.com/Shakthichaithanya/Professional-Protfolio"
     },
     {
       title: "Authorization Server",

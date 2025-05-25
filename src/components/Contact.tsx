@@ -235,7 +235,7 @@ const Contact = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex space-x-4 text-red-500"
-                >
+                >Note: For Faster reply Please message in LinkedIn<br></br>
                   {link.icon}
                 </a></div>
             </div>
