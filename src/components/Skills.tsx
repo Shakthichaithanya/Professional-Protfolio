@@ -1,8 +1,7 @@
-import { motion } from 'framer-motion';
+import { motion } from "framer-motion";
 
 const Skills = () => {
   const skillCategories = [
-    
     {
       title: "Backend",
       skills: [
@@ -10,29 +9,28 @@ const Skills = () => {
         { name: "Spring Boot", level: 82 },
         { name: "Spring Security", level: 70 },
         { name: "RESTful APIs", level: 88 },
-        { name: "OAuth2.0", level: 60}
-      ]
+        { name: "OAuth2.0", level: 60 },
+      ],
     },
     {
       title: "Microservices",
       skills: [
         { name: "Docker", level: 75 },
         { name: "CI/CD", level: 72 },
-        { name: "Kubernetes", level: 40},
-        { name: "Api Gateway", level: 67},
-        { name: "Circuit Breaker",level:60},
-        { name: "RabbitMQ", level: 70},
-        { name: "Load Balancer", level: 40},
-        
-      ]
+        { name: "Kubernetes", level: 40 },
+        { name: "Api Gateway", level: 67 },
+        { name: "Circuit Breaker", level: 60 },
+        { name: "RabbitMQ", level: 70 },
+        { name: "Load Balancer", level: 40 },
+      ],
     },
     {
       title: "Databases",
       skills: [
-        {name: "SQL",level:80},
-        {name: "Redis", level: 50},
-        {name: "MongoDB", level: 40}
-      ]
+        { name: "SQL", level: 80 },
+        { name: "Redis", level: 50 },
+        { name: "MongoDB", level: 40 },
+      ],
     },
     {
       title: "Frontend",
@@ -42,7 +40,7 @@ const Skills = () => {
         { name: "TypeScript", level: 50 },
         { name: "React", level: 61 },
         { name: "Tailwind CSS", level: 20 },
-      ]
+      ],
     },
     {
       title: "Tools & Others",
@@ -50,10 +48,9 @@ const Skills = () => {
         { name: "Git/GitHub", level: 90 },
         { name: "Figma", level: 38 },
         { name: "AI tools", level: 90 },
-        { name: "Postman", level: 76}
-      ]
+        { name: "Postman", level: 76 },
+      ],
     },
-    
   ];
 
   const containerVariants = {
@@ -61,9 +58,9 @@ const Skills = () => {
     visible: {
       opacity: 1,
       transition: {
-        staggerChildren: 0.1
-      }
-    }
+        staggerChildren: 0.1,
+      },
+    },
   };
 
   const itemVariants = {
@@ -71,8 +68,8 @@ const Skills = () => {
     visible: {
       opacity: 1,
       y: 0,
-      transition: { duration: 0.5 }
-    }
+      transition: { duration: 0.5 },
+    },
   };
 
   return (
@@ -99,8 +96,10 @@ const Skills = () => {
               transition={{ duration: 0.5, delay: catIndex * 0.1 }}
               className="bg-gray-50 rounded-xl shadow-lg p-6 border border-gray-100"
             >
-              <h3 className="text-xl font-bold text-blue-600 mb-6 text-center">{category.title}</h3>
-              
+              <h3 className="text-xl font-bold text-blue-600 mb-6 text-center">
+                {category.title}
+              </h3>
+
               <motion.div
                 variants={containerVariants}
                 initial="hidden"
@@ -112,7 +111,9 @@ const Skills = () => {
                   <motion.div key={skillIndex} variants={itemVariants}>
                     <div className="flex justify-between mb-1">
                       <span className="font-medium">{skill.name}</span>
-                      <span className="text-sm text-gray-500">{skill.level}%</span>
+                      <span className="text-sm text-gray-500">
+                        {skill.level}%
+                      </span>
                     </div>
                     <div className="w-full bg-gray-200 rounded-full h-2.5">
                       <motion.div

@@ -1,4 +1,4 @@
-import { motion } from 'framer-motion';
+import { motion } from "framer-motion";
 
 const Loader = () => {
   return (
@@ -12,14 +12,14 @@ const Loader = () => {
         >
           <div className="text-4xl font-bold text-blue-600">Portfolio</div>
         </motion.div>
-        
+
         <motion.div
           initial={{ width: 0 }}
           animate={{ width: "100%" }}
           transition={{ duration: 1.5, ease: "easeInOut" }}
           className="h-1 bg-blue-600 rounded-full w-64 mx-auto"
         />
-        
+
         <motion.p
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}

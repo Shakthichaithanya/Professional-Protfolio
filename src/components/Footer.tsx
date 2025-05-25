@@ -1,21 +1,23 @@
-import { Linkedin, Github } from 'lucide-react';
-import { Link } from 'react-scroll';
+import { Linkedin, Github } from "lucide-react";
+import { Link } from "react-scroll";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
-  
+
   const socialLinks = [
     { icon: <Github size={20} />, url: "https://github.com/Shakthichaithanya" },
-    { icon: <Linkedin size={20} />, url: "https://www.linkedin.com/in/shakthi-chaithanya" },
-  
+    {
+      icon: <Linkedin size={20} />,
+      url: "https://www.linkedin.com/in/shakthi-chaithanya",
+    },
   ];
 
   const quickLinks = [
-    { name: 'Home', to: 'hero' },
-    { name: 'About', to: 'about' },
-    { name: 'Experience', to: 'experience' },
-    { name: 'Projects', to: 'projects' },
-    { name: 'Contact', to: 'contact' },
+    { name: "Home", to: "hero" },
+    { name: "About", to: "about" },
+    { name: "Experience", to: "experience" },
+    { name: "Projects", to: "projects" },
+    { name: "Contact", to: "contact" },
   ];
 
   return (
@@ -25,7 +27,8 @@ const Footer = () => {
           <div>
             <h3 className="text-2xl font-bold mb-4">Shakthi Chaithanya</h3>
             <p className="text-gray-400 mb-4">
-              A passionate software developer focused on creating robust backend systems.
+              A passionate software developer focused on creating robust backend
+              systems.
             </p>
             <div className="flex space-x-4">
               {socialLinks.map((link, index) => (
@@ -41,7 +44,7 @@ const Footer = () => {
               ))}
             </div>
           </div>
-          
+
           <div>
             <h3 className="text-xl font-bold mb-4">Quick Links</h3>
             <ul className="space-y-2">
@@ -61,7 +64,7 @@ const Footer = () => {
               ))}
             </ul>
           </div>
-          
+
           <div>
             <h3 className="text-xl font-bold mb-4">Contact Info</h3>
             <ul className="space-y-2 text-gray-400">
@@ -70,11 +73,12 @@ const Footer = () => {
             </ul>
           </div>
         </div>
-        
+
         <div className="border-t border-gray-800 pt-8 text-center text-gray-500">
           <p>&copy; {currentYear} Shakthi Chaithanya. All rights reserved.</p>
           <p className="mt-2 text-sm">
-            Designed and built with <span className="text-red-500">❤</span> using React, Tailwind CSS, and Framer Motion
+            Designed and built with <span className="text-red-500">❤</span>{" "}
+            using React, Tailwind CSS, and Framer Motion
           </p>
         </div>
       </div>

@@ -1,5 +1,5 @@
-import { motion } from 'framer-motion';
-import { GraduationCap, Award, BookOpen } from 'lucide-react';
+import { motion } from "framer-motion";
+import { GraduationCap, Award, BookOpen } from "lucide-react";
 
 const Education = () => {
   const education = [
@@ -7,30 +7,34 @@ const Education = () => {
       degree: "Bachelor of Technology in Electrical Engineering",
       institution: "Sri Venkateswara College of Engineering, Tirupati",
       period: "2018-2022",
-      description: "Graduated with distinction. Participated in various coding competitions.",
-      icon: <GraduationCap size={24} />
+      description:
+        "Graduated with distinction. Participated in various coding competitions.",
+      icon: <GraduationCap size={24} />,
     },
     {
       degree: "Spring Security",
       institution: "Udemy",
       period: "2023",
-      description: "Intensive 12-week program focused on modern web application security aspects and best practices.",
-      icon: <BookOpen size={24} />
+      description:
+        "Intensive 12-week program focused on modern web application security aspects and best practices.",
+      icon: <BookOpen size={24} />,
     },
     {
       degree: "Docker & Kubernetes",
       institution: "Udemy",
       period: "2024",
-      description: "Intensive 8-week program focused on Docker & Kubermetes. Learned how to deploy a application in cloud environment using Docker & K8s",
-      icon: <BookOpen size={24} />
+      description:
+        "Intensive 8-week program focused on Docker & Kubermetes. Learned how to deploy a application in cloud environment using Docker & K8s",
+      icon: <BookOpen size={24} />,
     },
     {
       degree: "SQL Intermediate",
       institution: "Hackerrank",
       period: "2025",
-      description: "certificate of Accomplishent validating expertise in SQL Skill test.",
-      icon: <Award size={24} />
-    }
+      description:
+        "certificate of Accomplishent validating expertise in SQL Skill test.",
+      icon: <Award size={24} />,
+    },
   ];
 
   const containerVariants = {
@@ -38,9 +42,9 @@ const Education = () => {
     visible: {
       opacity: 1,
       transition: {
-        staggerChildren: 0.2
-      }
-    }
+        staggerChildren: 0.2,
+      },
+    },
   };
 
   const itemVariants = {
@@ -48,8 +52,8 @@ const Education = () => {
     visible: {
       opacity: 1,
       y: 0,
-      transition: { duration: 0.5 }
-    }
+      transition: { duration: 0.5 },
+    },
   };
 
   return (
@@ -62,7 +66,9 @@ const Education = () => {
           transition={{ duration: 0.5 }}
           className="text-center mb-12"
         >
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Education & Certifications</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">
+            Education & Certifications
+          </h2>
           <div className="w-20 h-1 bg-blue-600 mx-auto"></div>
         </motion.div>
 
@@ -88,11 +94,15 @@ const Education = () => {
                     <div className="w-0.5 h-full bg-blue-100 mx-auto mt-4"></div>
                   )}
                 </div>
-                
+
                 <div className="bg-gray-50 rounded-xl p-6 shadow-md border border-gray-100 flex-grow mb-6">
-                  <h3 className="text-xl font-bold text-blue-600">{item.degree}</h3>
+                  <h3 className="text-xl font-bold text-blue-600">
+                    {item.degree}
+                  </h3>
                   <div className="flex justify-between items-center mb-2">
-                    <h4 className="text-lg font-medium text-gray-700">{item.institution}</h4>
+                    <h4 className="text-lg font-medium text-gray-700">
+                      {item.institution}
+                    </h4>
                     <span className="text-sm text-gray-500">{item.period}</span>
                   </div>
                   <p className="text-gray-600">{item.description}</p>

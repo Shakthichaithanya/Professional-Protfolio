@@ -1,14 +1,21 @@
-import { motion } from 'framer-motion';
-import { User, Mail, MapPin, Calendar, Briefcase, GraduationCap } from 'lucide-react';
+import { motion } from "framer-motion";
+import {
+  User,
+  Mail,
+  MapPin,
+  Calendar,
+  Briefcase,
+  GraduationCap,
+} from "lucide-react";
 
 const About = () => {
   const fadeIn = {
     hidden: { opacity: 0, y: 20 },
-    visible: { 
-      opacity: 1, 
+    visible: {
+      opacity: 1,
       y: 0,
-      transition: { duration: 0.6 }
-    }
+      transition: { duration: 0.6 },
+    },
   };
 
   return (
@@ -36,27 +43,30 @@ const About = () => {
             <div className="bg-blue-50 p-8 rounded-xl shadow-lg">
               <h3 className="text-2xl font-semibold mb-6">Who I Am</h3>
               <p className="text-gray-700 mb-4 justify text-justify">
-                I'm a passionate backend developer with over 3 years of experience in building 
-                scalable and secure applications using Java and Spring Boot. My journey in 
-                software development started with a deep curiosity about how systems work, 
-                which has grown into a career focused on solving real-world problems through 
+                I'm a passionate backend developer with over 3 years of
+                experience in building scalable and secure applications using
+                Java and Spring Boot. My journey in software development started
+                with a deep curiosity about how systems work, which has grown
+                into a career focused on solving real-world problems through
                 robust backend solutions.
               </p>
               <p className="text-gray-700 mb-4 text-justify">
-                I specialize in designing and developing RESTful APIs, implementing microservices 
-                architectures, and ensuring high-performance and resilient backend systems. With 
-                hands-on experience in Spring Security, JPA/Hibernate, and database management, 
-                I take pride in writing clean, maintainable, and efficient code.
+                I specialize in designing and developing RESTful APIs,
+                implementing microservices architectures, and ensuring
+                high-performance and resilient backend systems. With hands-on
+                experience in Spring Security, JPA/Hibernate, and database
+                management, I take pride in writing clean, maintainable, and
+                efficient code.
               </p>
               <p className="text-gray-700 mb-4 text-justify">
-                I'm always eager to learn and stay up-to-date with emerging technologies and best 
-                practices in backend engineering.
+                I'm always eager to learn and stay up-to-date with emerging
+                technologies and best practices in backend engineering.
               </p>
               <p className="text-gray-700 mb-4 text-justify">
-                Outside of work, I enjoy exploring hiking trails, experimenting with photography, 
-                and contributing to open-source projects. I believe in building technology that 
-                is efficient, impactful, and inclusive.
-
+                Outside of work, I enjoy exploring hiking trails, experimenting
+                with photography, and contributing to open-source projects. I
+                believe in building technology that is efficient, impactful, and
+                inclusive.
               </p>
             </div>
           </motion.div>
@@ -69,8 +79,10 @@ const About = () => {
             className="md:w-1/2"
           >
             <div className="bg-white p-8 rounded-xl shadow-lg border border-gray-100">
-              <h3 className="text-2xl font-semibold mb-6">Personal Information</h3>
-              
+              <h3 className="text-2xl font-semibold mb-6">
+                Personal Information
+              </h3>
+
               <div className="space-y-4">
                 <div className="flex items-center">
                   <div className="bg-blue-100 p-3 rounded-full mr-4">
@@ -81,17 +93,19 @@ const About = () => {
                     <p className="font-medium">Shakthi Chaithanya Tirupati</p>
                   </div>
                 </div>
-                
+
                 <div className="flex items-center">
                   <div className="bg-blue-100 p-3 rounded-full mr-4">
                     <Mail className="text-blue-600" size={20} />
                   </div>
                   <div>
                     <h4 className="text-sm text-gray-500">Email</h4>
-                    <p className="font-medium">shakthichaithanya.tirupati@gmail.com</p>
+                    <p className="font-medium">
+                      shakthichaithanya.tirupati@gmail.com
+                    </p>
                   </div>
                 </div>
-                
+
                 <div className="flex items-center">
                   <div className="bg-blue-100 p-3 rounded-full mr-4">
                     <MapPin className="text-blue-600" size={20} />
@@ -101,7 +115,7 @@ const About = () => {
                     <p className="font-medium">Tirupati, Andhra Pradesh</p>
                   </div>
                 </div>
-                
+
                 <div className="flex items-center">
                   <div className="bg-blue-100 p-3 rounded-full mr-4">
                     <Calendar className="text-blue-600" size={20} />
@@ -111,7 +125,7 @@ const About = () => {
                     <p className="font-medium">January 03, 2001</p>
                   </div>
                 </div>
-                
+
                 <div className="flex items-center">
                   <div className="bg-blue-100 p-3 rounded-full mr-4">
                     <Briefcase className="text-blue-600" size={20} />
@@ -121,7 +135,7 @@ const About = () => {
                     <p className="font-medium">3+ Years</p>
                   </div>
                 </div>
-                
+
                 <div className="flex items-center">
                   <div className="bg-blue-100 p-3 rounded-full mr-4">
                     <GraduationCap className="text-blue-600" size={20} />
