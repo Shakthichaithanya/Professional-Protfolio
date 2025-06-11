@@ -62,12 +62,6 @@ const About = () => {
                 I'm always eager to learn and stay up-to-date with emerging
                 technologies and best practices in backend engineering.
               </p>
-              <p className="text-gray-700 mb-4 text-justify">
-                Outside of work, I enjoy exploring hiking trails, experimenting
-                with photography, and contributing to open-source projects. I
-                believe in building technology that is efficient, impactful, and
-                inclusive.
-              </p>
             </div>
           </motion.div>
 
